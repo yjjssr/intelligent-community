@@ -6,10 +6,14 @@
       <!-- <span>精细化展示</span> -->
       <!-- <img src="../../assets/main_right_header.png"> -->
     </div>
-    <div class="header-button">
-    <!-- <div><v-icon name="beer"></v-icon>切换至精细化展示</div> -->
-      
-    </div>
+    <!-- <div class="header-bottom"> -->
+      <!-- <div class="exchange">
+        <v-icon name="exchange-alt" size="6" style="color:#fff;"></v-icon>
+        <span>切换至精细化展示</span>
+      </div>
+      <div><ali-icon name="icon-xizao"></ali-icon></div> -->
+      <!-- <div class="header-display">图标</div> -->
+    <!-- </div> -->
   </div>
 </template>
 
@@ -41,5 +45,25 @@ export default {};
   color: #ffffff;
   letter-spacing: 1px;
   line-height: 24px;
+}
+.exchange {
+  color: #fff;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 27px;
+  float: right;
+}
+.exchange span {
+  margin-left: 5px;
+}
+.header-bottom {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.header-display {
+  width: 324px;
+  height: 81.8px;
 }
 </style>

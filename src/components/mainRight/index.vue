@@ -1,14 +1,17 @@
 <template>
 <div class="main-right">
 <right-header></right-header>
+<right-body></right-body>
 </div>
 </template>
 
 <script>
 import RightHeader from "./rightHeader"
+import RightBody from './rightBody'
 export default {
 components:{
-  RightHeader
+  RightHeader,
+  RightBody
 }
 }
 </script>
