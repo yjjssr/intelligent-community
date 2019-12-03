@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <template v-if="!$route.meta.public"><Dashboard></Dashboard></template>
     <template v-else>
       <transition>

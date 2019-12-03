@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="dash-board">
     <el-container>
       <el-header height="90.2px">
         <div class="hader-left">
@@ -10,7 +10,7 @@
         </div>
         <div class="header-right">
           <span>登录</span>
-          <img src="./assets/quit.png">
+          <img src="../assets/quit.png">
         </div>
         <div class="header-center">智慧诚信社区</div>
       </el-header>
@@ -35,8 +35,8 @@ export default {
   }
 };
 </script>
-<style>
-#app {
+<style scoped>
+.dash-board {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -47,7 +47,7 @@ export default {
   background-color: #000;
 }
 .el-header {
-  background: url("./assets/header_bg.png");
+  background: url("../assets/header_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #fff;
