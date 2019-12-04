@@ -11,7 +11,7 @@
           <el-input placeholder="请输入账号" v-model="form.account"></el-input>
         </el-form-item>
         <el-form-item class="my-form-item">
-           <svg-icon icon-class="password"></svg-icon>
+          <svg-icon icon-class="password"></svg-icon>
           <el-input placeholder="请输入密码" v-model="form.password" show-password></el-input>
         </el-form-item>
         <el-form-item>
@@ -38,7 +38,7 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
 .el-container {
   position: fixed;
   width: 100%;
@@ -70,8 +70,8 @@ export default {
 .form-header svg {
   margin-right: 10px;
 }
-.form-header svg:before{
-  content: ""
+.form-header svg:before {
+  content: "";
 }
 .el-form {
   max-width: 640px;
@@ -85,17 +85,20 @@ export default {
   border-radius: 15px;
   padding: 20px;
 }
-.my-form-item{
+.my-form-item {
   display: flex;
-  background: rgba(0, 0, 0, 0.1)
-}
-.my-form-item .el-form-item__content{
- display: flex!important;
- align-items: center;
-}
-.my-form-item svg{
-  color: #fafafa;
-  padding: 0 5px;
+  background: rgba(0, 0, 0, 0.1);
+  .el-form-item__content {
+    display: flex !important;
+    align-items: center;
+  }
+  svg {
+    color: #fafafa;
+    padding: 0 5px;
+  }
+  .el-input__inner {
+    background-color: yellow;
+  }
 }
 </style>
 
