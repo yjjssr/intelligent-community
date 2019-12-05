@@ -6,17 +6,16 @@
           <svg-icon icon-class="logo"></svg-icon>
           <span>智能社区</span>
         </div>
-        <el-form-item class="my-form-item">
+        <el-form-item>
           <svg-icon icon-class="user"></svg-icon>
           <el-input placeholder="请输入账号" v-model="form.account"></el-input>
         </el-form-item>
-        <el-form-item class="my-form-item">
+        <el-form-item>
           <svg-icon icon-class="password"></svg-icon>
           <el-input placeholder="请输入密码" v-model="form.password" show-password></el-input>
         </el-form-item>
-        <el-form-item>
-          <el-button type="primary" @click="onSubmit">登录</el-button>
-        </el-form-item>
+        <el-button class="my-button" type="primary" @click="onSubmit">登录</el-button>
+      
       </el-form>
     </el-main>
   </el-container>
@@ -38,7 +37,7 @@ export default {
   }
 };
 </script>
-<style scoped lang="scss">
+<style  lang="scss" scoped>
 .el-container {
   position: fixed;
   width: 100%;
@@ -85,20 +84,32 @@ export default {
   border-radius: 15px;
   padding: 20px;
 }
-.my-form-item {
+.el-form-item {
   display: flex;
   background: rgba(0, 0, 0, 0.1);
-  .el-form-item__content {
-    display: flex !important;
-    align-items: center;
-  }
+  border-radius: 10px;
   svg {
     color: #fafafa;
     padding: 0 5px;
   }
-  .el-input__inner {
-    background-color: yellow;
-  }
+ 
 }
+.el-form-item /deep/ .el-form-item__content {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    padding-right: 10px;
+    padding-left: 15px;
+    /deep/ .el-input__inner{
+       background-color: transparent;
+       border: none;
+       color: #fff;
+    }
+  }
+  .my-button{
+    width: 100%;
+  }
+
 </style>
 

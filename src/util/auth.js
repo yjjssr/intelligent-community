@@ -9,3 +9,13 @@ export function setToken(token) {
 export function removeToken() {
 	return Cookies.remove(TokenKey);
 }
+export function setUserInfo(userInfo){
+  return Cookies.set(UserInfoKey, JSON.stringify(userInfo))
+}
+export function getUserInfo () {
+  let userInfo = Cookies.get(UserInfoKey)
+  if (userInfo) {
+   return JSON.parse(userInfo)
+  }
+  return
+ }
