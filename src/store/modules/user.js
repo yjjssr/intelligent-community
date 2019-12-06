@@ -1,7 +1,6 @@
 import {loginByUsername} from '@/api/login'
 import {getToken,setToken,setUserInfo} from '@/util/auth'
-import { resolve } from 'dns'
-import { reject } from 'q'
+
 const user={
   namespaced: true,
   state:{
@@ -20,15 +19,19 @@ const user={
     LoginByUsername({commit},userInfo){
       const username=userInfo.username.trim()
       return new Promise((resolve,reject)=>{
-        loginByUsername(username,userInfo.password)
+        loginByUsername(userInfo)
         .then(response=>{
           const result=response.data.data
-          const tokenInfo=result.tokenInfo
-          const userInfo=result.userInfo.cmsUser
+          const tokenInfo=result.token
+          // const userInfo=result.userInfo.cmsUser
           commit('SET_TOKEN',tokenInfo)
           setToken(tokenInfo)
-          commit(SET_USERINFO,userInfo)
-          setUserInfo(userInfo)
+          resolve()
+          // commit(SET_USERINFO,userInfo)
+          // setUserInfo(userInfo)
+        })
+        .catch(error=>{
+          reject(error)
         })
       })
 

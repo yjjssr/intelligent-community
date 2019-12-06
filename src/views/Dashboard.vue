@@ -8,10 +8,10 @@
           <span>10:00</span>
           <span>农历九月十五</span>
         </div>
-        <div class="header-right">
+        <!-- <div class="header-right">
           <span>登录</span>
           <img src="../assets/quit.png">
-        </div>
+        </div> -->
         <div class="header-center">智慧诚信社区</div>
       </el-header>
       <el-main>
