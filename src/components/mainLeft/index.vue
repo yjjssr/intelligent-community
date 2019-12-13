@@ -12,5 +12,6 @@ export default {
 .main-left{
   float: left;
   width:18%;
+  height: 100%;
 }
 </style>

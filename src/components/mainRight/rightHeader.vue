@@ -1,19 +1,9 @@
 <template>
   <div class="right-header">
     <div class="header-top">
-      <span>平广大楼智慧社区平台</span>
-      <!-- <div class="top-bg"></div> -->
-      <!-- <span>精细化展示</span> -->
-      <!-- <img src="../../assets/main_right_header.png"> -->
+      <span>精细化展示</span>
+     
     </div>
-    <!-- <div class="header-bottom"> -->
-      <!-- <div class="exchange">
-        <v-icon name="exchange-alt" size="6" style="color:#fff;"></v-icon>
-        <span>切换至精细化展示</span>
-      </div>
-      <div><ali-icon name="icon-xizao"></ali-icon></div> -->
-      <!-- <div class="header-display">图标</div> -->
-    <!-- </div> -->
   </div>
 </template>
 
@@ -31,7 +21,7 @@ export default {};
   background-repeat: no-repeat;
   background-size: 40%;
   margin-top: 2%;
-  padding-bottom: 2.6%;
+  padding-bottom: 3.1%;
 }
 /* .top-bg{
   background-image: url("../../assets/main_right_header.png");

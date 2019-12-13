@@ -14,5 +14,7 @@ export default {
     overflow: auto;
     margin-left: 18%;
     margin-right: 40.4%;
+    height: 100%;
+  
 }
 </style>

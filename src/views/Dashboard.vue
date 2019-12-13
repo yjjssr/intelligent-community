@@ -11,7 +11,7 @@
         <!-- <div class="header-right">
           <span>登录</span>
           <img src="../assets/quit.png">
-        </div> -->
+        </div>-->
         <div class="header-center">智慧诚信社区</div>
       </el-header>
       <el-main>
@@ -42,9 +42,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 .el-container {
-  background-color: #000;
+  background-color: #0c1b30;
+  height: 100%;
 }
 .el-header {
   background: url("../assets/header_bg.png");

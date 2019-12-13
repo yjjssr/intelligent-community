@@ -75,10 +75,12 @@ export default {
 <style  lang="scss" scoped>
 .el-container {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-image: url("../assets/login_bg.png");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 .el-main {
