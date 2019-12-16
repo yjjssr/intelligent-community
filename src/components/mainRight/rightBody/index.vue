@@ -35,19 +35,15 @@ export default {
 </script>
 <style scoped>
 .rightBody {
-  margin-top: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
   display: flex;
+  justify-content: space-between;
 }
 .display-left {
-  float: left;
-  width: 45%;
+  flex: 1;
   margin-right: 20px;
   
 }
 .display-right {
-  overflow: hidden;
   flex: 1;
   
 }

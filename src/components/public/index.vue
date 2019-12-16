@@ -25,6 +25,7 @@ $basic-border: 1px solid #fff;
   color: #39f;
   height: auto !important;
   margin-top: 20px;
+  text-align: left;
 }
 .el-main {
   background-color: #0d2445;
