@@ -129,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="barrier-wrap">
+    <!-- <div class="barrier-wrap">
       <div class="title">道闸</div>
       <div class="barrier-body">
         <div class="barrier-item">
@@ -149,7 +149,7 @@
           <div class="barrier-des">{{barrier.des}}</div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -233,6 +233,9 @@ export default {
 <style lang="scss" scoped>
 .main-wrap {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .title {
     text-align: left;
     margin: 10px 0;
@@ -262,7 +265,7 @@ export default {
   }
 
   .elevator-wrap {
-     margin-bottom: 30px;
+    //  margin-bottom: 30px;
     .tab-title {
       padding: 5px 0;
       display: flex;
@@ -307,24 +310,24 @@ export default {
       }
     }
   }
-  .barrier-body {
-    display: flex;
-    justify-content: space-between;
-    .barrier-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .barrier-bg {
-        background-image: url("../../../assets/entranceGuard_bg1.png");
-        background-size: cover;
-        width: 56px;
-        height: 56px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  }
+  // .barrier-body {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   .barrier-item {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     .barrier-bg {
+  //       background-image: url("../../../assets/entranceGuard_bg1.png");
+  //       background-size: cover;
+  //       width: 56px;
+  //       height: 56px;
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: center;
+  //     }
+  //   }
+  // }
 }
 </style>

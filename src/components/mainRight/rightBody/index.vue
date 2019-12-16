@@ -15,6 +15,10 @@
         <template v-slot:header>物联网智能硬件</template>
         <template v-slot:body><hardware></hardware></template>
       </wrap>
+       <wrap>
+        <template v-slot:header>消防通道堆物</template>
+        <template v-slot:body><fight-access></fight-access></template>
+      </wrap>
     </div>
   </div>
 </template>
@@ -24,12 +28,14 @@ import Community  from './community'
 import Hardware from './hardware'
 import MaintainReceipt from './maintainAndReceipt'
 import Wrap from '../../public'
+import FightAccess from './fireFightingAccess'
 export default {
   components: {
     Wrap,
     MaintainReceipt,
     Community,
-    Hardware
+    Hardware,
+    FightAccess
   }
 };
 </script>
@@ -41,10 +47,16 @@ export default {
 .display-left {
   flex: 1;
   margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
   
 }
 .display-right {
   flex: 1;
+   display: flex;
+  flex-direction: column;
+  justify-content:space-between;
   
 }
 </style>
