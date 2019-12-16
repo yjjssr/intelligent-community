@@ -1,16 +1,35 @@
 <template>
   <div class="rightBody">
     <div class="display-left">
-      <fund-receipt></fund-receipt>
+      <wrap>
+        <template v-slot:header>维修基金使用情况及公益性收入</template>
+        <template v-slot:body><maintain-receipt height="130%"></maintain-receipt></template>
+      </wrap>
+      <wrap>
+        <template v-slot:header>社区信息</template>
+        <template v-slot:body><community></community></template>
+      </wrap>
     </div>
-    <div class="display-right"></div>
+    <div class="display-right">
+      <wrap>
+        <template v-slot:header>物联网智能硬件</template>
+        <template v-slot:body><hardware></hardware></template>
+      </wrap>
+    </div>
   </div>
 </template>
 <script>
-import FundReceipt from "./fundAndReceipt";
+
+import Community  from './community'
+import Hardware from './hardware'
+import MaintainReceipt from './maintainAndReceipt'
+import Wrap from '../../public'
 export default {
   components: {
-    FundReceipt
+    Wrap,
+    MaintainReceipt,
+    Community,
+    Hardware
   }
 };
 </script>
@@ -19,15 +38,18 @@ export default {
   margin-top: 60px;
   margin-left: 20px;
   margin-right: 20px;
+  display: flex;
 }
 .display-left {
   float: left;
   width: 45%;
+  margin-right: 20px;
+  
 }
 .display-right {
   overflow: hidden;
-
-  margin-left: 15px;
+  flex: 1;
+  
 }
 </style>
 
